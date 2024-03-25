@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Cantikku.</strong>
+                        <p>
+                            Selamat bertambah usia ya sayangg
+                            Panjang umur, semoga apa yang dicita-citakan dan diimpikan tercapai yah dan di umur yang baru ini sayangg selalu diberi kesehatan dan kekuatan serta kebahagiaan melimpah
+                            dan juga menjadi pribadi yang lebih baik dari lagi. Intinya apapun doamu,itupun juga doaku.
+                            Allah Bless You my sweetheart dan tetap jadi dirimu.
+                            Love you my beautiful wonderful georgeous pretty moonshine sunshine the everything.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
